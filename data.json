@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "6594fce4feaecd4b354abe2c"
+  },
+  "name": "Canon M50",
+  "photo": "uploads\\ea44b4e5-1f31-4b45-821b-ef9badfcbc57.png",
+  "price": 1099,
+  "stock": 10,
+  "category": "camera",
+  "createdAt": {
+    "$date": "2024-01-03T06:21:24.308Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T07:22:22.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6594fd136aa068483afc3a2c"
+  },
+  "name": "MacBook Air",
+  "photo": "uploads\\d8387a27-2c19-417c-a20f-c39bc7aae727.png",
+  "price": 899,
+  "stock": 6,
+  "category": "laptop",
+  "createdAt": {
+    "$date": "2024-01-03T06:22:11.986Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T06:22:11.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65950c07a1b1443ff031aef6"
+  },
+  "name": "Nintendo Switch",
+  "photo": "uploads\\d03ead22-7f8a-49b4-90f4-ac079bbc62e8.png",
+  "price": 499,
+  "stock": 8,
+  "category": "game",
+  "createdAt": {
+    "$date": "2024-01-03T07:25:59.886Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T07:25:59.886Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65951f49a7087d848bb670b5"
+  },
+  "name": "Netflix Platform",
+  "photo": "uploads\\6a5c5dc0-e3d5-40f6-84ed-bd9a493e7b1b.png",
+  "price": 1085,
+  "stock": 4,
+  "category": "movie",
+  "createdAt": {
+    "$date": "2024-01-03T08:48:09.560Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T08:48:09.560Z"
+  },
+  "__v": 0
+}]

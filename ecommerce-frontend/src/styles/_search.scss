@@ -1,0 +1,131 @@
+.product-search-page {
+    padding: 2rem;
+    @include flex(row, flex-start, stretch, 2rem);
+    min-height: calc(100vh - 6.5vh);
+  
+    > aside {
+      min-width: 20rem;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.247);
+      padding: 2rem;
+      @include flex(column, flex-start, stretch, 0.5rem);
+      > h2 {
+        @include heading;
+        padding-bottom: 1.5rem;
+      }
+  
+      > div {
+        > input,
+        > select {
+          @include inputStyle(
+            100%,
+            1rem,
+            white,
+            1px solid rgba(154, 154, 154, 0.38)
+          );
+          border-radius: 10px;
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
+          cursor: pointer;
+          text-transform: capitalize;
+        }
+      }
+    }
+  
+    > main {
+        width: 100%;
+        padding: 0 1rem;
+        > h1 {
+            @include heading;
+        }
+    
+        > input {
+            @include inputStyle(95%);
+            border-radius: 5px;
+            border: 1px solid;
+            margin-left: 20px;
+            margin: 2rem;
+            font-size: 1.2rem;
+            display: block;
+        }
+    
+        .search-product-list {
+            @include flex(row, center, flex-start);
+            flex-wrap: wrap;
+            height: calc(100% - 15rem);
+            // overflow-y: auto;
+        }
+        // $p: 0.5rem 1rem, $bg, $color
+        article {
+            margin-top: 15px;
+            @include flex;
+            > button {
+                @include flex;
+                @include btn(0.5rem 1rem, $color3, $color1);
+                border-radius: 10px;
+                &:disabled {
+                    cursor: not-allowed;
+                    opacity: 0.5;
+                    color: $color2;
+                }
+            }
+        }
+
+        .product-card {
+            // flex-basis: 25%;
+            position: relative;
+            width: 25rem;
+            height: 30rem;
+            padding: 1rem;
+            margin: 1.5rem;
+            margin-bottom: 3rem;
+            border: 1px solid black;
+            // flex: none;
+            overflow: hidden;
+            @include flex(column, flex-start, center, 4px);
+            position: relative;
+            background-color: white;
+            &:hover > div{
+                opacity: 1;
+                cursor: pointer;
+            }
+            .category{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background: #777;
+                padding: .8rem;
+                border-radius: .5rem
+            }
+            img {
+                @include square(calc(24.75rem - 3rem));
+                object-fit: contain;
+                margin: 1rem;
+            }
+
+            span{
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
+
+            >div {
+                opacity: 0;
+                position: absolute;
+                @include square(100%);
+                top: 0;
+                left: 0;
+                background-color: #0000006b;
+                @include flex;
+                
+                button{
+                    @include flex;
+                    @include square(3rem);
+                    border-radius: 100%;
+                    border: none;
+                    background-color: $color3;
+                    cursor: pointer;
+                    color: $color1;
+                }
+            }
+        }
+    }
+}

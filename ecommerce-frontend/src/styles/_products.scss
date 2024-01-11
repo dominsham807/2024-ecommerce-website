@@ -1,0 +1,79 @@
+.products {
+    > section {
+        // overflow-y: auto;
+    
+        > h1{
+            text-align: center;
+            padding: 30px;
+            color: #222;
+            font-size: 3rem;
+        }
+
+        .products-list{
+            @include flex(row, center, flex-start);
+            flex-wrap: wrap;
+            height: calc(100% - 15rem);
+
+            .product-card {
+                position: relative;
+                flex-basis: 25%;
+                width: 27rem;
+                height: 30rem;
+                padding: 1rem;
+                margin: 1.5rem;
+                margin-bottom: 3rem;
+                border: 1px solid black;
+                // flex: none;
+                overflow: hidden;
+                @include flex(column, flex-start, center, 4px);
+                position: relative;
+                background-color: white;
+                &:hover > div{
+                    opacity: 1;
+                    cursor: pointer;
+                }
+        
+                .category{
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    background: #777;
+                    padding: .8rem;
+                    border-radius: .5rem
+                }
+
+                img {
+                    @include square(calc(24.75rem - 3rem));
+                    object-fit: contain;
+                    margin: 1rem;
+                }
+        
+                span{
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                }
+        
+                >div {
+                    opacity: 0;
+                    position: absolute;
+                    @include square(100%);
+                    top: 0;
+                    left: 0;
+                    background-color: #0000006b;
+                    @include flex;
+                    
+                    button{
+                        @include flex;
+                        @include square(3rem);
+                        border-radius: 100%;
+                        border: none;
+                        background-color: $color3;
+                        cursor: pointer;
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+   
+}

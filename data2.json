@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "659cbe284116d0d2379f9489"
+  },
+  "name": "Canon M50",
+  "photo": "uploads\\cb0aa712-20e1-4d74-a5ca-c83e48287a09.png",
+  "price": 2999,
+  "stock": 14,
+  "category": "camera",
+  "createdAt": {
+    "$date": "2024-01-09T03:31:52.057Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-09T03:31:52.057Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659cbe624116d0d2379f9490"
+  },
+  "name": "Badminton Racket",
+  "photo": "uploads\\6a2b386a-a7b3-4ec2-872b-00f6280bf148.png",
+  "price": 1569,
+  "stock": 6,
+  "category": "sports",
+  "createdAt": {
+    "$date": "2024-01-09T03:32:51.004Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-09T03:32:51.004Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659cbe784116d0d2379f9496"
+  },
+  "name": "MacBook Pro Air",
+  "photo": "uploads\\c039e5d4-4f1a-47b9-8832-f27529948711.png",
+  "price": 4959,
+  "stock": 8,
+  "category": "laptop",
+  "createdAt": {
+    "$date": "2024-01-09T03:33:12.717Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-09T03:33:12.717Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659cc16e3dbfbd8a342474ba"
+  },
+  "name": "iPhone 15 Pro",
+  "photo": "uploads\\8ecdd72b-1313-479a-a3f4-3c8e7f8d2a00.png",
+  "price": 1489,
+  "stock": 15,
+  "category": "phone",
+  "createdAt": {
+    "$date": "2024-01-09T03:45:50.848Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-09T03:46:29.157Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659cc246d8f2d4d2890d21b6"
+  },
+  "name": "Nintendo Switch",
+  "photo": "uploads\\8ef0a37a-794f-4311-b926-3d4f12076dc5.png",
+  "price": 1679,
+  "stock": 9,
+  "category": "game",
+  "createdAt": {
+    "$date": "2024-01-09T03:49:26.859Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-09T03:49:40.873Z"
+  },
+  "__v": 0
+}]
