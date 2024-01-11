@@ -79,6 +79,7 @@ export const getDashboardStats = TryCatch(async (req, res, next) => {
             .select(["orderItems", "discount", "total", "status"])
             .limit(4);
   
+     
         const [
             thisMonthProducts,
             thisMonthUsers,
@@ -108,7 +109,8 @@ export const getDashboardStats = TryCatch(async (req, res, next) => {
             User.countDocuments({ gender: "female" }),
             latestTransactionsPromise,
         ]);
-  
+        console.log(productsCount)
+        
         const thisMonthRevenue = thisMonthOrders.reduce(
             (total, order) => total + (order.total || 0),
             0
@@ -241,12 +243,12 @@ export const getPieCharts = TryCatch(async(req, res, next) => {
             shipped: shippedOrder,
             delivered: deliveredOrder 
         }
-        console.log(orderFulfillment)
+        // console.log(orderFulfillment)
 
         const productCategories = await getInventories({
             categories, productsCount
         })
-        console.log(productCategories)
+        // console.log(productCategories)
 
         const stockAvailability = {
             inStock: productsCount - outOfStock,

@@ -111,7 +111,7 @@ const Dashboard = () => {
               <h2>Gender Ratio</h2>
               <DoughnutChart
                 labels={["Female", "Male"]}
-                data={[12, 19]}
+                data={[stats.userRatio.female, stats.userRatio.male]}
                 backgroundColor={[
                   "hsl(340, 82%, 56%)",
                   "rgba(53, 162, 235, 0.8)",
