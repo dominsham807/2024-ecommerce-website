@@ -67,7 +67,8 @@ const Cart = () => {
                 dispatch(discountApplied(res.data.discount))
                 setIsValidCouponCode(true)
                 dispatch(calculatePrice())
-            }).catch((e) => {
+            }).catch((error) => {
+                console.log(error)
                 dispatch(discountApplied(0))
                 setIsValidCouponCode(false)
                 dispatch(calculatePrice())
@@ -102,6 +103,7 @@ const Cart = () => {
                 )}
             </main>
             <aside>
+                <h1>Prices</h1>
                 <p>Subtotal: HK$ {subtotal} </p>
                 <p>Shipping Charges: {cartItems?.length > 0 ? (
                     <>

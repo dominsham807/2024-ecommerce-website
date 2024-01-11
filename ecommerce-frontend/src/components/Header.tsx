@@ -34,10 +34,8 @@ const Header = ({ user }: PropsType) => {
             <div className="nav-routes">
                 <Link to={"/"}>Home</Link>  
                 <Link to={"/products"}>Products</Link>  
-                <Link to={"/"}>Shippings</Link>  
-                <Link to={"/cart"}>    
-                    Cart
-                </Link>
+                <Link to={"/shipping"}>Shippings</Link>  
+                <Link to={"/cart"}>Cart</Link>
                
             </div>
             <div className="nav-links">

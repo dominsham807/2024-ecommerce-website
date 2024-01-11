@@ -75,6 +75,7 @@
 
   .graph-container {
     @include flex(row, unset, unset, 2rem);
+    width: 100%;
     padding: 0 2rem 2rem 0;
     > div {
       background-color: white;
@@ -83,24 +84,27 @@
 
     .revenue-chart {
       width: 100%;
-      padding: 1rem 3rem;
+      max-width: 65%;
+      padding: 3rem;
 
       > h2 {
         @include heading;
-        margin: 1rem 0 2rem 0.25rem;
+        margin: 1rem 0 8rem 0.25rem;
         text-align: center;
       }
     }
 
     .dashboard-categories {
       width: 100%;
-      max-width: 16rem;
+      max-width: 35%;
       @include flex(column, center, unset, 0);
       padding-bottom: 2rem;
       > h2 {
         @include heading;
         margin: 1.5rem 0 2rem 0;
         text-align: center;
+        padding-top: 35px;
+        padding-bottom: 90px;
       }
 
       > div {

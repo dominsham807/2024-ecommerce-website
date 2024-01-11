@@ -28,7 +28,35 @@ ChartJS.register(
   Filler
 );
 
-const months = ["January", "February", "March", "April", "May", "June", "July"];
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+
+const months: string[] = [];
+// console.log(new Date().getMonth())
+let currentMonthName = monthNames[new Date().getMonth()]
+console.log(currentMonthName)
+
+
+var today = new Date();
+var d;
+var month;
+var year;
+
+for(var i = 5; i > 0; i -= 1) {
+    d = new Date(today.getFullYear(), today.getMonth() - i, 1);
+    month = monthNames[d.getMonth()];
+    year = d.getFullYear();
+    if(year < today.getFullYear()){
+      const pastYearMonth = month + " " + year
+      months.push(pastYearMonth)
+    } else{
+      months.push(month)
+    }
+    console.log(today.getFullYear());
+    console.log(year);
+}
+
+months.push(currentMonthName)
 
 interface BarChartProps {
   horizontal?: boolean;

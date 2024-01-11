@@ -1,7 +1,10 @@
 .shipping {
     @include flex;
     position: relative;
-    
+    background-color: lightgray;
+    height: calc(100vh - 5rem);
+    overflow-y: hidden;
+
     .back-btn {
       @include square(2.5rem);
       background-color: $color2;
@@ -29,7 +32,7 @@
       max-width: 450px;
       width: 100%;
       @include flex(column, center, stretch, 2rem);
-      padding: 2rem;
+      // padding: 2rem;
   
       > h1 {
         @include heading(2px);

@@ -1,13 +1,19 @@
 .cart{
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     @include flex(row, unset, unset, 4rem);
     height: calc(100vh - 4rem);
+    background: lightgray;
 
     > main{
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 65%;
         > h1{
             text-align: center;
+            padding: 35px 0;
         }
-        width: 65%;
+      
         
         > .no-items-section{
             padding-top: 10%;
@@ -25,10 +31,20 @@
     }
 
     > aside {
+        > h1{
+            // text-align: center;
+            // padding: 20px 0;
+            font-size: 28px;
+        }
+
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
         width: 35%;
         padding: 2rem;
         @include flex(column, flex-start, stretch, 1.5rem);
-        margin-top: 30px;
+        // margin-top: 30px;
 
         >input {
             padding: 1rem;
@@ -61,6 +77,9 @@
     @include flex(row, flex-start, center, 3rem);
     border: 1px solid black;
     border-radius: .5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+
     > img{
         // @include square(12rem);
         height: 12rem;
