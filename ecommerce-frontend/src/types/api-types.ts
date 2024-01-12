@@ -18,6 +18,11 @@ export type UserResponse = {
     user: User
 }
 
+export type AllUsersResponse = {
+    success: boolean
+    users: User[]
+}
+
 export type AllProductsResponse = {
     success: boolean
     products: Product[]

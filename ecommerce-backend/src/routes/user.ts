@@ -7,7 +7,7 @@ const app = express.Router()
 app.post("/new", newUser)
 app.post("/login", loginUser)
 
-app.get("/", adminOnly, getAllUsers)
+app.get("/all", adminOnly, getAllUsers)
 app.route("/:id").get(getUser).delete(adminOnly, deleteUser)
 
 export default app

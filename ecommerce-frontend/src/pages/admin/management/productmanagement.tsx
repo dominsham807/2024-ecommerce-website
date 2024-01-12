@@ -113,7 +113,7 @@ const Productmanagement = () => {
               <img src={`${server}/${photo}`} alt="Product" />
               <p>{name}</p>
               {stock > 0 ? (
-                <span className="green">{stock} Available</span>
+                <span className="green">Available Stock: {stock}</span>
               ) : (
                 <span className="red"> Not Available</span>
               )}

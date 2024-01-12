@@ -1,10 +1,11 @@
 import express from "express"
 import { adminOnly } from "../middlewares/auth.js"
-import { getDashboardStats, getPieCharts } from "../controllers/stats.js"
+import { getBarCharts, getDashboardStats, getPieCharts } from "../controllers/stats.js"
 
 const app = express.Router()
 
 app.get("/stats", adminOnly, getDashboardStats)
 app.get("/pie", adminOnly, getPieCharts)
+app.get("/bar", adminOnly, getBarCharts)
 
 export default app 

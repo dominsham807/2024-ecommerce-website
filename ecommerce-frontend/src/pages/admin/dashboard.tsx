@@ -122,7 +122,8 @@ const Dashboard = () => {
                 <BiMaleFemale />
               </p>
             </div>
-            {/* <Table data={data.transaction} /> */}
+            
+            <Table data={stats.latestTransaction} />
           </section>
           </>
         )}
